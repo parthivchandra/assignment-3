@@ -1,0 +1,161 @@
+/* General Reset & Font Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #f4f4f5;
+  color: #1a1a1a;
+  line-height: 1.5;
+  padding: 40px 20px;
+}
+
+/* Page Container (A4 Proportions) */
+.resume-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 50px 60px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 2px;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.name {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  margin-bottom: 6px;
+  color: #111111;
+}
+
+.contact-info {
+  font-size: 14px;
+  color: #333333;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.contact-info a {
+  color: #111111;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Section Styling */
+.section {
+  margin-bottom: 22px;
+}
+
+.section-title {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border-bottom: 1.5px solid #222222;
+  padding-bottom: 3px;
+  margin-bottom: 12px;
+  color: #111111;
+}
+
+/* Summary */
+.summary-text {
+  font-size: 14px;
+  color: #2c2c2c;
+  text-align: justify;
+}
+
+/* Education Section */
+.education-item {
+  margin-bottom: 12px;
+}
+
+.edu-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.edu-title {
+  font-weight: 600;
+  font-size: 14.5px;
+  color: #111111;
+}
+
+.edu-date {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #333333;
+}
+
+.edu-location {
+  font-size: 13.5px;
+  color: #444444;
+  margin-top: 1px;
+}
+
+/* Projects Section */
+.project-item {
+  margin-bottom: 14px;
+}
+
+.project-title {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 3px;
+}
+
+.project-desc {
+  font-size: 13.5px;
+  color: #2c2c2c;
+  margin-bottom: 4px;
+}
+
+.bullet-list {
+  padding-left: 18px;
+  margin-bottom: 4px;
+}
+
+.bullet-list li {
+  font-size: 13.5px;
+  color: #2c2c2c;
+}
+
+.tech-stack {
+  font-size: 13.5px;
+  color: #2c2c2c;
+}
+
+/* Additional Information Section */
+.info-list p {
+  font-size: 13.5px;
+  color: #2c2c2c;
+  margin-bottom: 4px;
+}
+
+/* Print Optimization for Saving as PDF */
+@media print {
+  body {
+    background: none;
+    padding: 0;
+  }
+  .resume-container {
+    box-shadow: none;
+    padding: 0;
+    max-width: 100%;
+  }
+}
